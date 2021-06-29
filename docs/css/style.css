@@ -1,0 +1,86 @@
+body {
+    background-color: #70CF51;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow:hidden;
+    margin:0px; padding:0px;
+}
+
+.monkeyDown, monkeyUp, hole, .holeWithEnemy, fullHeart, .emptyHeart, .score, ground, lowerground, background, gameover {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+monkeyUp {
+    background-image: url(../images/HammerMonkeyUp.png);
+    width: 130px; height: 130px;
+    cursor: pointer;
+}
+
+.monkeyDown {
+    background-image: url(../images/HammerMonkeyDown.png);
+    width: 130px; height: 130px;
+    cursor: pointer;
+}
+
+hole {
+    background-image: url(../images/Hole.png);
+    width: 33px; height: 40px;
+    cursor: pointer;
+}
+
+.holeWithEnemy {
+    background-image: url(../images/HoleWithEnemy.png);
+    width: 33px; height: 40px;
+    cursor: pointer;
+}
+
+fullHeart {
+    background-image: url(../images/Fullheart.png);
+    width: 110px; height: 120px;
+}
+
+.emptyHeart {
+    background-image: url(../images/Emptyheart.png);
+    width: 110px; height: 120px;
+}
+
+.score {
+    text-align: auto;
+    color: white;
+    font-size: 50px; 
+    width: 500px; height: 50px;
+    margin: 5px;
+}
+
+background {
+    background-image: url(../images/Fillerbackground.png);
+    width: 100%; height:100%;
+    background-position: 0px -400px;
+    background-size: cover;
+}
+
+ground {
+    background-image: url(../images/Ground.jpg);
+    width:100%; height:100%;
+    background-position: 0px 440px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: hue-rotate(20deg);
+}
+
+lowerground {
+    background-image: url(../images/Ground.jpg);
+    width:100%; height:100%;
+    background-position: 0px 640px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: hue-rotate(20deg);
+}
+
+gameover {
+    background-image: url(../images/GameOver.jpg);
+    width: 100%; height: 110%;
+    background-size: contain;
+}
